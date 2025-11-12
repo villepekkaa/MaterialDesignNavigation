@@ -7,7 +7,12 @@ import HomeScreen from './screens/HomeScreen';
 import SecondScreen from './screens/SecondScreen';
 import CustomAppBar from './components/CustomAppBar';
 
-const Stack = createStackNavigator();
+export type RootStackParamList = {
+  Home: undefined;
+  Second: undefined;
+};
+
+const Stack = createStackNavigator<RootStackParamList>();
 
 export default function App() {
   return (

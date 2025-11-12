@@ -1,6 +1,7 @@
 import React from 'react';
 import { Appbar } from 'react-native-paper';
 import { StackHeaderProps } from '@react-navigation/stack';
+import { RootStackParamList } from '../App';
 
 export default function CustomAppBar({ navigation, back }: StackHeaderProps) {
   return (

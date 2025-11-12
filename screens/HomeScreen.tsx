@@ -1,7 +1,11 @@
-import React from 'react'
-import {View, Text, Button, StyleSheet} from 'react-native';
+import React from 'react';
+import { View, Text, StyleSheet } from 'react-native';
+import { StackScreenProps } from '@react-navigation/stack';
+import { RootStackParamList } from '../App';
 
-export default function HomeScreen() {
+type HomeScreenProps = StackScreenProps<RootStackParamList, 'Home'>;
+
+export default function HomeScreen({ navigation }: HomeScreenProps) {
   return (
     <View style={style.container}>
       <Text>HomeScreen</Text>
